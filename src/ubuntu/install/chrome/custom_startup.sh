@@ -5,6 +5,7 @@ PGREP="chrome"
 MAXIMIZE="true"
 DEFAULT_ARGS=""
 
+
 if [[ $MAXIMIZE == 'true' ]] ; then
     DEFAULT_ARGS+=" --start-maximized"
 fi
@@ -56,7 +57,6 @@ kasm_startup() {
     fi
 
     if [ -z "$DISABLE_CUSTOM_STARTUP" ] ||  [ -n "$FORCE" ] ; then
-
         echo "Entering process startup loop"
         set +x
         while true
